@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Konektum-PC</title>
+  <link rel="icon" type="image/svg" href="media/logo.svg">
+  <link rel="stylesheet" href="stilovi.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Faustina:wght@300;400;500;700&family=Montserrat:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&family=Neonderthaw&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="grid-container">
+    <header class="page-header">
+      <nav class="site-nav">
+        <div class="nav-button">&#8801;</div>
+        <ul>
+          <li><a href="index.htm">POČETNA</a></li>
+          <li><a href="proizvodi-i-usluge.htm"><strong>PROIZVODI I USLUGE</strong></a></li>
+          <li><a href="katalog.htm">KATALOG</a></li>
+          <li><a href="cjenik.htm">CJENIK</a></li>
+          <li><a href="kontakt.htm">KONTAKT</a></li>
+        </ul>
+      </nav>
+      <div class="header-grid">
+        <h1 class="site-title">KONEKTUM-PC</h1>
+      </div>
+    </header>
+    <aside class="links">
+      <p><a href="#komponente">Prodaja komponenti</a></p>
+      <p><a href="#konfiguracije">Sastavljanje konfiguracija</a></p>
+      <p><a href="#servis">Servis računala</a></p>
+    </aside>
+    <main class="primary">
+      <h2 class="page-title">PROIZVODI I USLUGE</h2>
+      <div class="content-columns">
+        <article>
+          <h3 id="komponente">PRODAJA KOMPONENTI</h3>
+          <img src="media/komponente.jpg" alt="komponente">
+          <p>Kod nas možete pronaći sve komponente za vaš savršeni setup. U ponudi imamo najnovije modele grafičkih kartica i procesora koji mogu podnijeti zahtjeve i onih najzatjevnijih igrača. Također tu su i RAM-i sa velikim rasponom brzina, matične ploče sa AMD ili Intel socketima, te vise od 30 vrsta napajanja u koje se možete pouzdati da će dostaviti dovoljno energije za vaše računalo. Između ostalog, kod nas možete pronaći i sve potrebno od periferije: miševi, tipkovnice, monitori, web-kamere, mikrofoni, slušalice, kabel ekstenzije i naravno ogroman izbor kućišta.
+          </p>
+          <p class="underline"><a href="#">povratak na vrh</a></p>
+        </article>
+        <article>
+          <h3 id="konfiguracije">SASTAVLJANJE KONFIGURACIJA</h3>
+          <img src="media/sastavljanje.jpg" alt="sastavljanje">
+          <p>Oduvijek ste željeli računalo sastavljeno po vašoj viziji idealnog računala, ali niste znali sami, ili se ne usudite probati? Strah da nešto pođe po krivu dok sastavljate računalo je normalna stvar, ali ne i kod naših stručnjaka! Obratite nam se s povjerenjem, zajedno ćemo doći do vaše idealne konfiguracije, izgleda i svega ostalog potrebnog da bi ste mogli uživati u vašem novom računalu. Garantiramo ispravnost konfiguracije sastavljene od strane naših stručnjaka i nudimo 2 tjedna probnog roka na sve vaše ili pre-made konfiguracije.
+          </p>
+          <p class="underline"><a href="#">povratak na vrh</a></p>
+        </article>
+        <article>
+          <h3 id="servis">SERVIS RAČUNALA</h3>
+          <img src="media/man-repairing.jpg" alt="servis računala">
+          <p>U današnje vrijeme gotovo svi koriste računala, ali rijetki su oni koji znaju da je redovan servis računala iznimno važan za njegovo optimalno funkcioniranje. Još rijeđi su oni koji to znaju sami napraviti, zato smo tu mi i naš tim stručnjaka. Servisiramo sve vrste računala, od Macbooka do osobnog računala te uklanjamo kvarove i radimo redovno čišćenje. Također za vas nudimo i servis softverskih problema, koji znaju predstavljati velike probleme. Kod servisa dajemo garanciju na ispravnost i uklanjamo sve nedostatke unutar 2 tjedna nakon servisa o našem trošku.
+          </p>
+          <p class="underline"><a href="#">povratak na vrh</a></p>
+        </article>
+      </div>
+    </main>
+    <footer class="page-footer">
+      <p class="footer">Seminarski rad za POU Algebra-Web dizajn - Marin Zorić 2022.</p>
+    </footer>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    $('.nav-button').click(function(){
+      $('.site-nav ul').slideToggle();
+    });
+  </script>
+</body>
+</html>

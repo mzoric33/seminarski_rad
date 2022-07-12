@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Konektum-PC</title>
+  <link rel="icon" type="image/svg" href="media/logo.svg">
+  <link rel="stylesheet" href="stilovi.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Faustina:wght@300;400;500;700&family=Montserrat:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&family=Neonderthaw&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="grid-container">
+    <header class="page-header">
+      <nav class="site-nav">
+        <div class="nav-button">&#8801;</div>
+        <ul>
+          <li><a href="index.htm">POČETNA</a></li>
+          <li><a href="proizvodi-i-usluge.htm">PROIZVODI I USLUGE</a></li>
+          <li><a href="katalog.htm">KATALOG</a></li>
+          <li><a href="cjenik.htm">CJENIK</a></li>
+          <li><a href="kontakt.htm"><strong>KONTAKT</strong></a></li>
+        </ul>
+      </nav>
+      <div class="header-grid">
+        <h1 class="site-title">KONEKTUM-PC</h1>
+      </div>
+    </header>
+    <main class="primary">
+      <h2 class="page-title">KONTAKT</h2>
+      <div class="content-columns">
+        <article>
+          <p><strong>Konektum-PC</strong>, tvrtka za prodaju i <br>distribuciju računalnih komponenti i <br>servis računalne opreme.</p>
+          <p><strong>Adresa</strong>: Hrvoje Horvata 11, 10000 Zagreb</p>
+          <p><strong>E-mail</strong>: <a href="mailto:konektum-pc@gmail.com?subject=Mail sa web stranice" class="underline">konektum-pc@gmail.com</a></p>
+          <p><strong>Tel</strong>: +385989942761</p>
+        </article>
+        <form name="kontakt-obrazac" action="https://formsubmit.co/zoricmarin4@gmail.com" method="post" enctype="multipart/form-data" autocomplete="off">
+          <p>
+            <label for="name">Ime i prezime:</label><br>
+            <input id="name" name="name" type="text" required>
+          </p>
+          <p>
+            <label for="adresa">Adresa:</label><br>
+            <input id="adresa" name="adresa" type="text" required>
+          </p>
+          <p>
+            <label for="email">E-mail:</label><br>
+            <input id="email" name="email" type="email" placeholder="primjer@gmail.com" required>
+          </p>
+          <p>
+            <label for="message">Vaš upit:</label><br>
+            <textarea id="message" name="message" cols="34" rows="8" required></textarea>
+          </p>
+          <p>
+            <input name="reset_btn" type="reset" value="Poništi">
+            <input name="submit_btn" type="submit" value="Pošalji">
+          </p>
+        </form>
+      </div>
+    </main>
+    <footer class="page-footer">
+      <p class="footer">Seminarski rad za POU Algebra-Web dizajn - Marin Zorić 2022.</p>
+    </footer>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    $('.nav-button').click(function(){
+      $('.site-nav ul').slideToggle();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin:0;
+  padding:0;
+  text-align: center;
+  font-family: Faustina,sans-serif;
+}
+article {
+  padding:20px;
+}
+.tablica {
+  text-align: left;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 20px;
+}
+caption {
+  text-align: left;
+  padding-left: 20%;
+  font-size: 1.1em;
+  font-weight: 900;
+}
+.cijena {
+  text-align: right;
+}
+img {
+  max-width:100%;
+  height:auto;
+  border:1px solid;
+}
+.primary {
+  background-color: #7cb342;
+}
+.page-header {
+  background-image: url(media/logo.svg);
+  background-repeat: no-repeat;
+  background-size: 15%;
+  background-position: 15% 95%;
+}
+.footer {
+  margin-top: 0;
+}
+a {
+  text-decoration: none;
+  color:black;
+}
+a:visited {
+  color: #333;
+}
+a:hover {
+  color:goldenrod;
+}
+a:visited:hover{ 
+  color:goldenrod;
+}
+a:active {
+  color: goldenrod;
+}
+a:focus {
+  color:goldenrod;
+}
+.site-title {
+  font-size: 6vw;
+}
+.underline {
+  text-decoration: underline;
+}
+.zanimljivosti {
+  padding:20px;
+  background-color: goldenrod;
+  margin-left: 20px;
+}
+.ponuda {
+  padding:20px;
+  background-color: goldenrod;
+  margin-right: 20px;
+}
+.price {
+  color:red;
+  font-weight: 700;
+}
+
+/* PAGE LAYOUT *******************/
+.grid-container {
+  display:grid;
+  min-height: 100vh;
+  grid-gap:20px;
+  grid-template-rows:auto 1fr auto;
+  grid-template-columns:1fr minmax(280px,1200px) 1fr;
+}
+.page-header,.page-footer{grid-column:1/4;}
+.primary{grid-column:2/3;}
+
+
+.content-columns {
+  display:grid;
+  grid-gap:20px;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  padding-top:0;
+  padding-left:20px;
+  padding-bottom:20px;
+  padding-right:20px;
+}
+.content-columns p {text-align: left;}
+.page-title{grid-column:1/-1;}
+
+.site-nav ul {
+  list-style-type:none;
+  padding:0;
+  margin:0;
+  display:grid;
+  grid-template-columns: repeat(5,1fr);
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  justify-content: space-between;
+  font-size:1.3em;
+  font-weight: 500;
+}
+.nav-button {
+  display:none;
+  font-size:2.5em;
+}
+.links {
+  grid-column: 1/2;
+  text-align: left;
+  margin-left: 20px;
+  font-size: 1.2em;
+}
+.tablica {grid-column: 1/-1;}
+
+/* MEDIA QUERIES ***************** */
+
+@media(max-width:900px) {
+  .site-nav ul {
+    grid-template-columns: 1fr; 
+    display:none;
+  }
+  .nav-button{
+    display:inline-block; 
+    margin-left:5%;
+    padding-bottom: 0;
+  }
+  .site-nav {
+    text-align: left;
+    padding-bottom: 30px;
+  }
+  .nav-button:hover {
+    color:goldenrod;
+  }
+  .links{
+    grid-column:2/-3;
+  }
+  .zanimljivosti {
+    grid-column: 1/-1;
+    margin: 20px;
+  }
+  .ponuda {
+    grid-column: 1/-1;
+    margin: 20px;
+  }
+  .tablica {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+  caption {
+    text-align: center;
+    padding: 0;
+  }
+  h3 {
+    padding-top: 0;
+  }
+  article {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+} 
+@media(min-width:901px) {
+  .site-nav ul {display:grid !important;}
+}

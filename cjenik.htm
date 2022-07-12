@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Konektum-PC</title>
+  <link rel="icon" type="image/svg" href="media/logo.svg">
+  <link rel="stylesheet" href="stilovi.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Faustina:wght@300;400;500;700&family=Montserrat:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&family=Neonderthaw&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="grid-container">
+    <header class="page-header">
+      <nav class="site-nav">
+        <div class="nav-button">&#8801;</div>
+        <ul>
+          <li><a href="index.htm">POČETNA</a></li>
+          <li><a href="proizvodi-i-usluge.htm">PROIZVODI I USLUGE</a></li>
+          <li><a href="katalog.htm">KATALOG</a></li>
+          <li><a href="cjenik.htm"><strong>CJENIK</strong></a></li>
+          <li><a href="kontakt.htm">KONTAKT</a></li>
+        </ul>
+      </nav>
+      <div class="header-grid">
+        <h1 class="site-title">KONEKTUM-PC</h1>
+      </div>
+    </header>
+    <main class="primary">
+      <h2 class="page-title">CJENIK</h2>
+      <div class="content-columns">
+        <table class="tablica">
+          <caption class="underline">GRAFIČKE KARTICE</caption>
+          <tr>
+            <th id="nvidiartx2080"><a href="katalog.htm#">NVIDIA RTX 2080</a></th>
+            <th class="cijena">2900,00 kn</th>
+          </tr>
+          <tr>
+            <th>ASUS GTX 1660ti</th>
+            <th class="cijena">1600,00 kn</th>
+          </tr>
+          <tr>
+            <th id="nvidia1080ti"><a href="katalog.htm#nvidiagtx1080ti">NVIDIA GTX 1080ti</a></th>
+            <th class="cijena">1900,00 kn</th>
+          </tr>
+          <tr>
+            <th>PALIT GTX 1070</th>
+            <th class="cijena">1700,00 kn</th>
+          </tr>
+          <tr>
+            <th>MSI RTX 2060</th>
+            <th class="cijena">2200,00 kn</th>
+          </tr>
+        </table>
+        <table class="tablica">
+          <caption class="underline">PROCESORI</caption>
+          <tr>
+            <th id="ryzen53600"><a href="katalog.htm#ry53600">Ryzen 5 3600</a></th>
+            <th class="cijena">2100,00 kn</th>
+          </tr>
+          <tr>
+            <th id="I5-9400F"><a href="katalog.htm#I5-9400F">Intel I5-9400F</a></th>
+            <th class="cijena">1400,00 kn</th>
+          </tr>
+          <tr>
+            <th>Intel I3 10300</th>
+            <th class="cijena">1200,00 kn</th>
+          </tr>
+          <tr>
+            <th>Intel I7 10700</th>
+            <th class="cijena">2700,00 kn</th>
+          </tr>
+          <tr>
+            <th>Ryzen 5 5600X</th>
+            <th class="cijena">2300,00 kn</th>
+          </tr>
+        </table>
+        <table class="tablica">
+          <caption class="underline">MONITORI</caption>
+          <tr>
+            <th id="LGultragear"><a href="katalog.htm#LGUltragear">LG Ultragear</a></th>
+            <th class="cijena">999,00 kn</th>
+          </tr>
+          <tr>
+            <th>Acer Predator X</th>
+            <th class="cijena">1900,00 kn</th>
+          </tr>
+          <tr>
+            <th>Alienware XBH</th>
+            <th class="cijena">2200,00 kn</th>
+          </tr>
+          <tr>
+            <th>Dell S24HG</th>
+            <th class="cijena">1400,00 kn</th>
+          </tr>
+          <tr>
+            <th id="acernitro"><a href="katalog.htm#acer_nitro">Acer Nitro</a></th>
+            <th class="cijena">1200,00 kn</th>
+          </tr>
+        </table>
+      </div>
+    </main>
+    <footer class="page-footer">
+      <p class="footer">Seminarski rad za POU Algebra-Web dizajn - Marin Zorić 2022.</p>
+    </footer>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    $('.nav-button').click(function(){
+      $('.site-nav ul').slideToggle();
+    });
+  </script>
+</body>
+</html>
