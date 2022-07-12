@@ -3,7 +3,7 @@
 Ovo web-sjedište je kreirano kao seminarski rad za Web-dizajn tečaj na Algebra Veleučilištu.
 Za izradu projekta primjenio sam svoje znanje iz HTML-a, CSS-a i jQuery-a. Site je u responzivan što je implementirano putem CSS media queries-a,
 te je u smartphone pogledu implementiran nav-button pomoću jQuery-a.
-Ovaj site sam dizajnirao sam u Photopea programu, te je sav dizajn također priložen u .psd i .jpg formatu.
+Ovaj site sam dizajnirao u Photopea programu, te je sav dizajn također priložen u .psd i .jpg formatu.
 
 Site se nalazi na domeni: https://www.mzoric.mojweb.com.hr/index.htm
 
